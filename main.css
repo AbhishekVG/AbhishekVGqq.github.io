@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+/* header start*/
+#header{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+}
+
+#header .branding{
+    width:250px;
+    height:50px;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    padding: 0px 15px;
+    position: relative;
+    float:left;
+} 
+#header .branding>span{
+    line-height: 50px;
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+} 
+.fa{
+        color: rgba(0, 0, 0, 0.4)!important;
+        display: block;
+}
+#header>header>ul{
+    list-style: none;
+    float:left;
+    padding:0;  
+    margin:0; 
+    height: 50px; 
+    font-size: 0;/*this is because in online-blocks it is addingup space between li elements,to avoid this add  font-size 0 to the parent element and actual font size to the child...so font-size 14 given in li elements*/
+}
+#header ul a>i{
+    line-height:50px;
+    text-align:center;
+}
+#header ul>li>a{
+    display:block;
+    padding: 0 10px;
+    /*background: rgba(0,0,0,0.5);*/
+    height: 100%;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    text-decoration: none;
+    color:white
+}
+
+#header>header>ul>li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 14px;
+    width:50px;
+    text-align:center;
+}
+#header .pull-right{
+    float: right;    
+}
+#header .badge{
+    padding: 2px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-size: 9px;
+}
+#header .badge-black{
+    background-color: rgba(177, 193, 189, 0.66);
+    color: #b51919;
+    font-family: monospace;
+    font-size: 12px;
+}
+#header .img-round{
+    border-radius: 50%
+}
+#header .size-40X40{
+    width: 40px;
+    height: 40px;
+}
+img{
+ margin: 0;
+ padding: 0;   
+}
+#header .name{
+    line-height:47px;
+    /*width:*/
+}
+#header .profile{
+    width:210px;
+}
+#header .fa-white{
+    margin-left: 10px;
+    color:white!important;
+}
+#header span{
+    margin: 0 5px;
+}
+#header ul>.profile>ul>li:not(.divider){
+    padding: 3px;
+    font-family: cursive;
+    cursor: pointer;
+}
+#header ul>.profile>ul>li:hover{
+    background-color: #dcdcdc;
+}
+#header ul>.profile>ul>li>i{
+    color: black!important;
+    width: 30px;
+    text-align: center;
+}
+.animate{
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+}
+.fade-in-right{
+    animation-name: fade-in-right;
+    -moz-animation-name: fade-in-right;
+    -webkit-animation-name: fade-in-right;
+    -ms-animation-name: fade-in-right;
+}
+@keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        transform: translate3d(30px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-webkit-keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(30px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-moz-keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        -moz-transform: translate3d(30px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-ms-keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        -ms-transform: translate3d(30px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+
+.fade-in-left{
+    animation-name: fade-in-left;
+    -moz-animation-name: fade-in-left;
+    -webkit-animation-name: fade-in-left;
+    -ms-animation-name: fade-in-left;
+}
+
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translate3d(-50px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+} 
+@-webkit-keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(-50px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-moz-keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        -moz-transform: translate3d(-50px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-ms-keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        -ms-transform: translate3d(-50px,0px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+
+.fade-in-up{
+    animation-name: fade-in-up;
+    -moz-animation-name: fade-in-up;
+    -webkit-animation-name: fade-in-up;
+    -ms-animation-name: fade-in-up;
+}
+
+@keyframes fade-in-up{
+    0%{
+        opacity: 0;
+        transform: translate3d(0px,30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+@-webkit-keyframes fade-in-up{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0px,30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-moz-keyframes fade-in-up{
+    0%{
+        opacity: 0;
+        -moz-transform: translate3d(0px,30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-ms-keyframes fade-in-up{
+    0%{
+        opacity: 0;
+        -ms-transform: translate3d(0px,30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+.fade-in-down{
+    animation-name: fade-in-down;
+    -moz-animation-name: fade-in-down;
+    -webkit-animation-name: fade-in-down;
+    -ms-animation-name: fade-in-down;
+}
+
+@keyframes fade-in-down{
+    0%{
+        opacity: 0;
+        transform: translate3d(0px,-30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+@-webkit-keyframes fade-in-down{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0px,-30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-moz-keyframes fade-in-down{
+    0%{
+        opacity: 0;
+        -moz-transform: translate3d(0px,-30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+@-ms-keyframes fade-in-down{
+    0%{
+        opacity: 0;
+        -ms-transform: translate3d(0px,-30px,0px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        opacity:  1;
+    }
+
+}
+
+#header .panel{
+    font-family: cursive;
+    width: 250px;
+    border-radius: 17%;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+#header .panel-heading{
+    background-color: black;
+    color: white;
+}
+#header .panel-body{
+    border-right: 1px solid rgba(0,0,0,0.2);
+    border-left: 1px solid rgba(0,0,0,0.2);
+    color: black;
+}
+#header .panel-footer{
+    background-color: darkgray;
+    color: white;
+}
+.position{
+    position: relative;
+    left: -190px
+}
+/* header end */
+
+
+/* aside-left start*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aside-left end*/

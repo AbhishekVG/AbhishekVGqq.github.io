@@ -1,0 +1,26 @@
+{
+  "name": "template_angular",
+  "description": "template",
+  "main": "main.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower-components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "lazyload": "^3.2.2",
+    "oclazyload": "^1.1.0",
+    "jquery": "^3.2.1",
+    "ui-bootstrap": "^2.5.0",
+    "angular-ui-router": "^1.0.3",
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.7.0"
+  }
+}

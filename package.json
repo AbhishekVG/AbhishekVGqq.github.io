@@ -1,0 +1,16 @@
+{
+  "name": "template_angular",
+  "version": "1.0.0",
+  "description": "template",
+  "main": "main.js",
+  "scripts": {
+    "preinstall": "bower install",
+    "prestart": "npm install",
+    "start": "http-server -a 127.0.0.1 -p 8007 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
